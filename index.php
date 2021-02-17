@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>portfólio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	</head>
+	<body id="home">
+
+		<header class="white">
+			<div class="container">
+				<nav class="menu-header flex flex-x-between flex-y-center">					
+					<h2>Portfólio</h2>
+					<ul class="unlisted flex">
+						<li>
+							<a href="">Inicio</a>
+						</li>
+						<li>
+							<a href="#skills">Habilidades</a>
+						</li>
+						<li>
+							<a href="#works">Trabalhos</a>
+						</li>
+						<li>
+							<a href="#contact">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="display-header">
+				<div class="container">
+					<h1>Portfólio Gabriel Santos</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="skills h-100" id="skills">
+			<div class="container">
+				<div class="p">
+					<h2 class="title-underline-black">Habilidades</h2>
+					<div class="skills-cards py flex flex-x-center">
+					<?php 
+					$linguagens = ['html', 'css', 'javascript', 'php', 'sql', 'python'];
+					foreach($linguagens as $linguagem):
+					?>
+						<div class="skill-card">
+							<h2><?=$linguagem?></h2>
+							<div class="skill-content">
+								<h3>Lorem ipsum dolor sit amet</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+
+					<?php endforeach; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="works h-50 white" id="works">
+			<div class="container">
+				<div class="p">
+					<h2 class="title-underline-white">Trabalhos</h2>
+					<div class="py">
+						<div class="works-list py">
+							<?php
+
+							for($i=1; $i<10;$i++):
+
+							?>
+							<div class="work-card black">
+								<div class="img">
+									<img src="/assets/imgs/person.jpg">
+								</div>
+								<div>
+									<h4>Cliente <?=$i?></h4>
+								</div>
+								<div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco.</p>
+								</div>
+								<div class="area-btn">
+									<a href="" class="btn">Ver Trabalho</a>
+								</div>
+							</div>
+
+							<?php
+
+							endfor;
+
+							?>
+							<div class="swipe">
+								<img src="https://static.thenounproject.com/png/74547-200.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact h-50 white" id="contact">
+			<div class="container">
+				<div class="py">
+					<h2 class="title-underline-white">Contato</h2>
+					<div class="py">
+						<div class="contact-content flex">
+							<div class="contacts">
+								<ul class="unlisted">
+									<li>
+										<a href="https://www.instagram.com/__gssl__/" target="_blank">
+											<i class="fab fa-instagram"></i>
+										</a>
+										<p>@__gssl__</p>
+									</li>
+									<li>
+										<a href="https://github.com/gabriellinge" target="_blank">
+											<i class="fab fa-github"></i>
+										</a>
+										<p>Gabriellinge</p>
+									</li>
+									<li>
+										<a href="mailto:liinge@hotmail.com" target="_blank">
+											<i class="far fa-envelope"></i>
+										</a>
+										<p>liinge@hotmail.com</p>
+									</li>
+								</ul>
+							</div>
+							<div class="form">
+								<form action="#" method="POST">
+									<input type="text" name="" placeholder="Nome">
+									<input type="email" name="" placeholder="Email">
+									<textarea rows="10">not working</textarea>
+									<input type="submit" name="" value="Enviar">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>
